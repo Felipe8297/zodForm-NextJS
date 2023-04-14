@@ -4,11 +4,10 @@
 
 1. A aplicação foi desenvolvida utilizando as seguintes tecnologias:
 
-- [Vite.js]([https://vitejs.dev/](https://nextjs.org/docs))
-- [React.js](https://reactjs.org/)
+- [Next.js](https://nextjs.org/docs)
 - [Styled Components](https://styled-components.com/)
 - [React Hook Form](https://react-hook-form.com/)
-- [Zod](https://github.com/vriad/zod)
+- [Zod](https://github.com/colinhacks/zod)
 - [TypeScript](https://www.typescriptlang.org/)
 
 2. Instale as dependências utilizando o gerenciador de pacotes [npm](https://www.npmjs.com/):
