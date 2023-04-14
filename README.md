@@ -4,7 +4,7 @@
 
 1. A aplicação foi desenvolvida utilizando as seguintes tecnologias:
 
-- [Vite.js](https://vitejs.dev/)
+- [Vite.js]([https://vitejs.dev/](https://nextjs.org/docs))
 - [React.js](https://reactjs.org/)
 - [Styled Components](https://styled-components.com/)
 - [React Hook Form](https://react-hook-form.com/)
