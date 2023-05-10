@@ -2,6 +2,7 @@ import { FormProps } from "@/services/schemaTypes";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { schemaForm } from "./schema";
+import { useRouter } from "next/navigation";
 import { useCallback, useEffect } from "react";
 import { AddressData, fetchAddress } from "@/services/request";
 import formatedCep from "@/utils/formatCep";
@@ -29,11 +30,16 @@ export const useCep = () => {
       },
     },
   });
+  const { push } = useRouter();
+
+  const handleRoute = () => {
+    push(`/finish`);
+  };
 
   const zipCode = watch("address.zipCode");
 
   const handleFormSubmit = (data: FormProps) => {
-    console.log(data);
+    handleRoute()
   };
 
   const handleSetData = useCallback(
@@ -64,7 +70,7 @@ export const useCep = () => {
     if (zipCode.length !== 9) return;
     handleFetchAddress(zipCode);
   }, [handleFetchAddress, setValue, zipCode]);
-  
+
   return {
     errors,
     register,
